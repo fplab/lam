@@ -2,12 +2,8 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "lam",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
+		{"include": "#keywords"},
+    {"include": "#numlits"}
 	],
 	"repository": {
 		"keywords": {
@@ -19,17 +15,10 @@
         "match": "\\s*(\\\\|\\.|=|\\?|:)\\s*"
       }]
 		},
-		"strings": {
-			"name": "string.quoted.double.lam",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.lam",
-					"match": "\\\\."
-				}
-			]
-		}
+    "numlits": {
+      "name": "constant.numericlet.lam",
+      "match": "\\s*[0-9]+"
+    }
 	},
 	"scopeName": "source.lam"
 }
