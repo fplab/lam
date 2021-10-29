@@ -12,9 +12,12 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.lam",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+				"name": "keyword.alphanumeric.lam",
+				"match": "\\b(let|in)\\b"
+			},{
+        "name": "keyword.symbolic.lam",
+        "match": "\\s*(\\\\|\\.|=|\\?|:)\\s*"
+      }]
 		},
 		"strings": {
 			"name": "string.quoted.double.lam",
