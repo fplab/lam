@@ -16,8 +16,8 @@
       }]
 		},
     "numlits": {
-      "name": "constant.numericlet.lam",
-      "match": "\\s*[0-9]+"
+      "name": "constant.numeric.lam",
+      "match": "\\b[0-9]\\b"
     }
 	},
 	"scopeName": "source.lam"
