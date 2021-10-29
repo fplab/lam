@@ -1,0 +1,24 @@
+{
+    "name": "lam",
+    "displayName": "lam",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lam",
+            "extensions": [".lam"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lam",
+            "scopeName": "source.lam",
+            "path": "./syntaxes/lam.tmLanguage.json"
+        }]
+    }
+}
