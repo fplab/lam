@@ -13,6 +13,9 @@
 			},{
         "name": "keyword.symbolic.lam",
         "match": "\\s*(\\\\|\\.|=|\\?|:)\\s*"
+      },{
+        "name": "keyword.operator",
+        "match": "(\\+|-|\\*|/)"
       }]
 		},
     "numlits": {
